@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "171481634621",
+    "project_id": "gobus-60947",
+    "storage_bucket": "gobus-60947.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171481634621:android:c0f2b209761faade789754",
+        "android_client_info": {
+          "package_name": "com.company.gobus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfWBMA9YQF4NaQ1ciXOqBqqGsBPjQmFNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
