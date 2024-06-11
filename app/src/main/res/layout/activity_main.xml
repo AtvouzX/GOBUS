@@ -5,6 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:backgroundTint="#00FFFFFF"
+    android:outlineProvider="background"
     tools:context=".activity.MainActivity">
 
     <LinearLayout
@@ -14,15 +17,15 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="65dp"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="start"
                 android:layout_marginStart="10dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:gravity="start"
                 android:orientation="horizontal">
 
@@ -59,7 +62,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="end"
                 android:layout_marginEnd="10dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:orientation="horizontal">
 
                 <ImageButton
@@ -77,6 +80,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center|end"
                     android:layout_weight="1"
+                    app:shapeAppearanceOverlay="@style/RoundedSquare"
                     tools:srcCompat="@tools:sample/avatars" />
             </LinearLayout>
 
@@ -84,19 +88,71 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="208dp"
             android:orientation="vertical">
 
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="172dp"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="35dp"
-                android:background="@drawable/roundstyle"
-                android:backgroundTint="@color/purple"
-                android:radius="550dp">
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/purple"
+                app:shapeAppearanceOverlay="@style/RoundedSquare">
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="12dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="hint" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00FFFFFF"
+                        android:orientation="horizontal"
+                        android:outlineProvider="none">
+
+                        <Button
+                            android:id="@+id/button10"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/yellow"
+                            android:text="14:00" />
+
+                        <View
+                            android:id="@+id/divider2"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="?android:attr/listDivider" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton4"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center|end"
+                            android:layout_weight="1"
+                            android:backgroundTint="#00FFFFFF"
+                            app:srcCompat="@drawable/arrow_back" />
+                    </LinearLayout>
+
+                </LinearLayout>
 
             </FrameLayout>
         </LinearLayout>
